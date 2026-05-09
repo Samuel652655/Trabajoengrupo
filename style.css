@@ -39,33 +39,15 @@ h1{
     transform: scale(1.05);
 }
 
-.tarjeta h2{
-    margin-bottom: 20px;
-}
-
 .tarjeta img{
     width: 180px;
     height: 180px;
     object-fit: cover;
     border-radius: 10px;
     border: 3px solid cyan;
+    margin-bottom: 20px;
 }
 
-.boton{
-    text-align: center;
-    margin-top: 50px;
-}
-
-.boton a{
-    text-decoration: none;
-    background: cyan;
-    color: black;
-    padding: 15px 25px;
-    border-radius: 10px;
-    font-weight: bold;
-    transition: 0.3s;
-}
-
-.boton a:hover{
-    background: white;
+.tarjeta h2{
+    font-size: 20px;
 }
