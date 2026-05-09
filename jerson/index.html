@@ -3,76 +3,93 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jerson Leonel Vicente Velasquez</title>
-
+    <meta name="description" content="Portafolio personal de Jerson Leonel Vicente Velasquez - Estudiante de Ingeniería en Sistemas">
+    <meta name="author" content="Jerson Leonel Vicente Velasquez">
+    <title>Jerson Vicente | Portafolio Personal</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <div class="perfil">
+    <!-- CONTENEDOR PRINCIPAL DEL PERFIL -->
+    <main class="perfil">
 
-        <img src="https://raw.githubusercontent.com/Samuel652655/Trabajoengrupo/9cc8cda26c9fcc3cf43e59810780a816dc539704/49c113cc-8ac1-49ff-8b44-f2e4e0d40634.jpg" alt="">
-
-        <h1>Jerson Leonel Vicente Velasquez</h1>
-
-        <p class="descripcion">
-            Soy una persona responsable, creativa y con interés en la tecnología y el aprendizaje constante. Me gusta trabajar en equipo, resolver problemas y seguir mejorando mis habilidades para alcanzar mis metas personales y profesionales.
-        </p>
-
-        <div class="contenedor">
-
-            <div class="card">
-                <h2>Metas</h2>
-
-                <p>
-                    Graduarme de la universidad, obtener estabilidad económica y trabajar en una empresa reconocida donde pueda desarrollar mis conocimientos tecnológicos.
-                </p>
-            </div>
-
-            <div class="card">
-                <h2>Lugares donde me gustaría trabajar</h2>
-
-                <p>
-                    Me gustaría trabajar en empresas tecnológicas internacionales como Microsoft, Intel o en una empresa de desarrollo de software en Guatemala.
-                </p>
-            </div>
-
-            <div class="card">
-                <h2>Cómo me veo en 10 años</h2>
-
-                <p>
-                    Me veo siendo una persona exitosa, ayudando a mi familia y creciendo profesionalmente mientras continúo aprendiendo nuevas tecnologías.
-                </p>
-            </div>
-
-            <div class="card">
-                <h2>Contacto</h2>
-
-                <p>📞 +502 4758 6868</p>
-
-                <p>📧 jersonvicente@gmail.com</p>
-            </div>
-
-            <div class="card">
-                <h2>Ubicación</h2>
-
-                <p>
-                    Escuintla, Guatemala
-                </p>
-
-                <iframe 
-                    src="https://maps.google.com/maps?q=escuintla%20guatemala&t=&z=13&ie=UTF8&iwloc=&output=embed">
-                </iframe>
-
-            </div>
-
+        <!-- SECCIÓN: FOTO DE PERFIL -->
+        <div class="foto-perfil">
+            <img src="https://raw.githubusercontent.com/Samuel652655/Trabajoengrupo/9cc8cda26c9fcc3cf43e59810780a816dc539704/49c113cc-8ac1-49ff-8b44-f2e4e0d40634.jpg" 
+                 alt="Foto de perfil de Jerson Leonel Vicente Velasquez">
         </div>
 
-        <a href="../index.html" class="volver">
-            Volver al Inicio
-        </a>
+        <!-- SECCIÓN: NOMBRE Y DESCRIPCIÓN -->
+        <div class="informacion-personal">
+            <h1>👨‍💻 Jerson Leonel Vicente Velasquez</h1>
+            <p class="descripcion">
+                Soy una persona <strong>responsable, creativa</strong> y con gran interés en la <strong>tecnología y el aprendizaje constante</strong>. 
+                Me gusta trabajar en equipo, resolver problemas y seguir mejorando mis habilidades para alcanzar mis metas personales y profesionales.
+            </p>
+        </div>
 
-    </div>
+        <!-- SECCIÓN: TARJETAS DE INFORMACIÓN (METAS, TRABAJO, FUTURO, CONTACTO, UBICACIÓN) -->
+        <div class="contenedor-tarjetas">
+
+            <!-- Tarjeta 1: Metas -->
+            <article class="card">
+                <h2>🎯 Mis metas</h2>
+                <p>
+                    Graduarme de la universidad, obtener estabilidad económica y trabajar en una empresa reconocida 
+                    donde pueda desarrollar mis conocimientos tecnológicos.
+                </p>
+            </article>
+
+            <!-- Tarjeta 2: Lugares donde le gustaría trabajar -->
+            <article class="card">
+                <h2>🏢 Empresas donde me gustaría trabajar</h2>
+                <p>
+                    Me gustaría trabajar en empresas tecnológicas internacionales como <strong>Microsoft</strong>, <strong>Intel</strong> 
+                    o en una empresa de desarrollo de software en <strong>Guatemala</strong>.
+                </p>
+            </article>
+
+            <!-- Tarjeta 3: Cómo se ve en 10 años -->
+            <article class="card">
+                <h2>🔮 ¿Cómo me veo en 10 años?</h2>
+                <p>
+                    Me veo como una persona <strong>exitosa</strong>, ayudando a mi familia y creciendo profesionalmente 
+                    mientras continúo aprendiendo nuevas tecnologías.
+                </p>
+            </article>
+
+            <!-- Tarjeta 4: Información de contacto -->
+            <article class="card">
+                <h2>📞 Contacto</h2>
+                <p>📱 Teléfono: <a href="tel:+50247586868">+502 4758 6868</a></p>
+                <p>📧 Correo: <a href="mailto:jersonvicente@gmail.com">jersonvicente@gmail.com</a></p>
+            </article>
+
+            <!-- Tarjeta 5: Ubicación geográfica -->
+            <article class="card">
+                <h2>📍 Ubicación</h2>
+                <p><strong>Escuintla, Guatemala</strong></p>
+                <div class="mapa-contenedor">
+                    <iframe 
+                        src="https://maps.google.com/maps?q=escuintla%20guatemala&t=&z=13&ie=UTF8&iwloc=&output=embed"
+                        title="Mapa de ubicación de Escuintla, Guatemala"
+                        loading="lazy"
+                        allowfullscreen>
+                    </iframe>
+                </div>
+                <p class="nota-mapa">📍 Puedes ampliar el mapa haciendo clic en los controles.</p>
+            </article>
+
+        </div> <!-- Fin de contenedor-tarjetas -->
+
+        <!-- BOTÓN DE VOLVER AL INICIO -->
+        <div class="boton-regreso">
+            <a href="../index.html" class="volver">
+                ⬅ Volver al Inicio
+            </a>
+        </div>
+
+    </main> <!-- Fin del contenido principal -->
 
 </body>
 </html>
