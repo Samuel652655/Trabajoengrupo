@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hazon Samuel Cardenas Estrada</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            padding: 40px 20px;
+            min-height: 100vh;
+        }
+
+        .perfil {
+            max-width: 1200px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 20px;
+            padding: 40px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+        }
+
+        .perfil img {
+            display: block;
+            margin: 0 auto 20px auto;
+            width: 180px;
+            height: 180px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 4px solid #1e3c72;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+        }
+
+        h1 {
+            text-align: center;
+            color: #333;
+            margin-bottom: 15px;
+            font-size: 1.8rem;
+        }
+
+        .descripcion {
+            text-align: center;
+            color: #666;
+            max-width: 700px;
+            margin: 0 auto 30px auto;
+            line-height: 1.6;
+            font-size: 0.9rem;
+        }
+
+        .info {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 25px;
+            margin: 30px 0;
+        }
+
+        .card {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 12px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+        }
+
+        .card h2 {
+            color: #1e3c72;
+            margin-bottom: 12px;
+            font-size: 1.3rem;
+            border-left: 4px solid #1e3c72;
+            padding-left: 12px;
+        }
+
+        .card p {
+            font-size: 0.85rem;
+            line-height: 1.5;
+            color: #555;
+            margin-bottom: 8px;
+        }
+
+        iframe {
+            width: 100%;
+            height: 200px;
+            border-radius: 8px;
+            border: 1px solid #ddd;
+            margin-top: 10px;
+        }
+
+        .volver {
+            display: inline-block;
+            background: #1e3c72;
+            color: white;
+            text-decoration: none;
+            padding: 12px 30px;
+            border-radius: 25px;
+            text-align: center;
+            transition: all 0.3s ease;
+            font-weight: 500;
+            margin-top: 20px;
+        }
+
+        .volver:hover {
+            background: #2a5298;
+            transform: scale(1.05);
+        }
+
+        @media (max-width: 768px) {
+            .perfil {
+                padding: 20px;
+            }
+            .info {
+                grid-template-columns: 1fr;
+                gap: 15px;
+            }
+            h1 {
+                font-size: 1.5rem;
+            }
+            .card h2 {
+                font-size: 1.1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="perfil">
+
+        <img src="https://raw.githubusercontent.com/Samuel652655/Trabajoengrupo/9cc8cda26c9fcc3cf43e59810780a816dc539704/baf66dbb-f90a-4bad-ad05-c7f08b8c763b.jpg" alt="Hazon Samuel Cardenas Estrada">
+
+        <h1>Hazon Samuel Cardenas Estrada</h1>
+
+        <p class="descripcion">
+            Soy una persona aventurera, creativa y apasionada por los videojuegos y la exploración. Me encanta viajar, conocer nuevos lugares, capturar momentos únicos y desarrollar experiencias interactivas que combinen mi amor por la tecnología y la adrenalina.
+        </p>
+
+        <div class="info">
+
+            <div class="card">
+                <h2>🎯 Metas</h2>
+                <p>
+                    Convertirme en desarrollador de videojuegos profesional, especializarme en mundos abiertos y físicas realistas. También quiero documentar mis viajes en un canal de YouTube y compartir mis aventuras urbanas y de montaña.
+                </p>
+            </div>
+
+            <div class="card">
+                <h2>💼 Lugares donde me gustaría trabajar</h2>
+                <p>
+                    Mis sueños laborales son trabajar en Mojang (creadores de Minecraft) para aportar ideas innovadoras, o en Rockstar Games (creadores de GTA y Red Dead Redemption) para ayudar a crear mundos abiertos épicos. También me encantaría trabajar en Bethesda o Ubisoft.
+                </p>
+            </div>
+
+            <div class="card">
+                <h2>🔮 Cómo me veo en 10 años</h2>
+                <p>
+                    Me veo viviendo aventuras increíbles alrededor del mundo: explorando las montañas nevadas de Rusia, haciendo exploraciones urbanas en edificios abandonados de Japón, recorriendo los parques nacionales de Estados Unidos y documentando cada experiencia. Quiero combinar mi trabajo remoto en videojuegos con mi pasión por viajar y conocer culturas nuevas. También me gustaría escalar el Monte Elbrus en Rusia y explorar los túneles subterráneos de Tokio.
+                </p>
+            </div>
+
+            <div class="card">
+                <h2>📞 Contacto</h2>
+                <p>
+                    Teléfono: +502 4567 8901
+                </p>
+                <p>
+                    Correo: hazon.cardenas@example.com
+                </p>
+                <p>
+                    Instagram: @hazon_explora
+                </p>
+            </div>
+
+            <div class="card">
+                <h2>📍 Ubicación</h2>
+                <p>
+                    Escuintla, Guatemala
+                </p>
+                <iframe 
+                    src="https://maps.google.com/maps?q=escuintla%20guatemala&t=&z=13&ie=UTF8&iwloc=&output=embed"
+                    allowfullscreen=""
+                    loading="lazy">
+                </iframe>
+            </div>
+
+        </div>
+
+        <a href="index.html" class="volver">
+            ← Volver al Inicio
+        </a>
+
+    </div>
+
+</body>
+</html>
