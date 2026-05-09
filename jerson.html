@@ -5,13 +5,159 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jerson Leonel Vicente Velasquez</title>
 
-    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Estilos para mejorar legibilidad, centrar imagen y hacer letra más pequeña */
+        /* Sin mover ningún elemento de su posición original */
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            padding: 40px 20px;
+            min-height: 100vh;
+        }
+
+        /* Contenedor principal */
+        .perfil {
+            max-width: 1200px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 20px;
+            padding: 40px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+        }
+
+        /* Centrar la imagen */
+        .perfil img {
+            display: block;
+            margin: 0 auto 20px auto;
+            width: 180px;
+            height: 180px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 4px solid #667eea;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+        }
+
+        /* Título */
+        h1 {
+            text-align: center;
+            color: #333;
+            margin-bottom: 15px;
+            font-size: 1.8rem;
+        }
+
+        /* Descripción */
+        .descripcion {
+            text-align: center;
+            color: #666;
+            max-width: 700px;
+            margin: 0 auto 30px auto;
+            line-height: 1.6;
+        }
+
+        /* Grid de cards */
+        .info {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 25px;
+            margin: 30px 0;
+        }
+
+        /* Estilo de cada card */
+        .card {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 12px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+        }
+
+        .card h2 {
+            color: #667eea;
+            margin-bottom: 12px;
+            font-size: 1.3rem;
+            border-left: 4px solid #667eea;
+            padding-left: 12px;
+        }
+
+        /* Texto más pequeño y legible */
+        body, .descripcion, .card p, .volver {
+            font-size: 0.9rem;
+            line-height: 1.5;
+            color: #555;
+        }
+
+        /* Hacer los párrafos dentro de cards un poco más pequeños */
+        .card p {
+            font-size: 0.85rem;
+            margin-bottom: 8px;
+        }
+
+        /* Estilo del iframe (mapa) */
+        iframe {
+            width: 100%;
+            height: 200px;
+            border-radius: 8px;
+            border: 1px solid #ddd;
+            margin-top: 10px;
+        }
+
+        /* Botón volver */
+        .volver {
+            display: inline-block;
+            background: #667eea;
+            color: white;
+            text-decoration: none;
+            padding: 12px 30px;
+            border-radius: 25px;
+            text-align: center;
+            transition: background 0.3s ease;
+            font-weight: 500;
+            margin-top: 20px;
+        }
+
+        .volver:hover {
+            background: #5a67d8;
+            transform: scale(1.05);
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .perfil {
+                padding: 20px;
+            }
+            
+            .info {
+                grid-template-columns: 1fr;
+                gap: 15px;
+            }
+            
+            h1 {
+                font-size: 1.5rem;
+            }
+            
+            .card h2 {
+                font-size: 1.1rem;
+            }
+        }
+    </style>
 </head>
 <body>
 
     <div class="perfil">
 
-        <img src="https://raw.githubusercontent.com/Samuel652655/Trabajoengrupo/9cc8cda26c9fcc3cf43e59810780a816dc539704/49c113cc-8ac1-49ff-8b44-f2e4e0d40634.jpg" alt="">
+        <!-- Imagen centrada (con CSS se centró sin mover el código) -->
+        <img src="https://raw.githubusercontent.com/Samuel652655/Trabajoengrupo/9cc8cda26c9fcc3cf43e59810780a816dc539704/49c113cc-8ac1-49ff-8b44-f2e4e0d40634.jpg" alt="Jerson Leonel Vicente Velasquez">
 
         <h1>Jerson Leonel Vicente Velasquez</h1>
 
