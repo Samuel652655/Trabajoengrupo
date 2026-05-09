@@ -10,44 +10,60 @@ body{
     color: white;
     min-height: 100vh;
     padding: 40px;
+    overflow-x: hidden;
 }
 
 h1{
     text-align: center;
-    margin-bottom: 40px;
+    margin-bottom: 60px;
     color: cyan;
+    font-size: 45px;
 }
 
 .contenedor{
     display: flex;
     justify-content: center;
+    align-items: center;
     flex-wrap: wrap;
-    gap: 30px;
+    gap: 25px;
+    transition: 0.5s;
 }
 
 .tarjeta{
-    background: #1c1c1c;
-    width: 250px;
+    text-decoration: none;
+    background: #1b1b1b;
+    width: 240px;
     padding: 20px;
-    border-radius: 15px;
+    border-radius: 20px;
     text-align: center;
-    box-shadow: 0 0 15px rgba(0,255,255,0.3);
-    transition: 0.3s;
-}
-
-.tarjeta:hover{
-    transform: scale(1.05);
+    transition: 0.5s;
+    position: relative;
+    box-shadow: 0 0 15px rgba(0,255,255,0.2);
 }
 
 .tarjeta img{
     width: 180px;
     height: 180px;
     object-fit: cover;
-    border-radius: 10px;
+    border-radius: 15px;
     border: 3px solid cyan;
     margin-bottom: 20px;
+    transition: 0.5s;
 }
 
 .tarjeta h2{
+    color: white;
     font-size: 20px;
+}
+
+.contenedor:hover .tarjeta{
+    transform: scale(0.85);
+    opacity: 0.5;
+}
+
+.contenedor .tarjeta:hover{
+    transform: scale(1.15);
+    opacity: 1;
+    z-index: 10;
+    box-shadow: 0 0 25px cyan;
 }
